@@ -1,0 +1,14 @@
+#ASP.NET Core 3.x - JWT Authentication Tutorial with Example API
+
+In this tutorial we'll go through a simple example of how to implement JWT (JSON Web Token) authentication in an ASP.NET Core 3.x API with C#.
+
+The example API has just two endpoints/routes to demonstrate authenticating with JWT and accessing a restricted route with JWT:
+
+/users/authenticate - public route that accepts HTTP POST requests containing the username and password in the body. If the username and password are correct then a JWT authentication token and the user details are returned.
+/users - secure route that accepts HTTP GET requests and returns a list of all the users in the application if the HTTP Authorization header contains a valid JWT token. If there is no auth token or the token is invalid then a 401 Unauthorized response is returned.
+
+Tutorial Contents :-
+Tools required to develop ASP.NET Core 3.x applications
+Running the example API locally
+Testing the ASP.NET Core API with Postman
+
